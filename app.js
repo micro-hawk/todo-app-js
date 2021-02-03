@@ -17,13 +17,23 @@ function addTodo(event){
     todoDiv.classList.add('todo');
     //create LI
     const newTodo = document.createElement('li');
-    newTodo.innerText = 'heyt';
+    newTodo.innerText = "HelloWorlds";
     newTodo.classList.add('todo-items');
 
     todoDiv.appendChild(newTodo);
 
     //CheckMark button
     const completedButton = document.createElement('button');
-    completedButton.innerHTML = "<i>fas fa-check </i>";
-    completedButton.classList.add('complete-btn');
+    completedButton.innerHTML = '<i class="fas fa-check"></i>';
+    completedButton.classList.add("complete-btn");
+    todoDiv.appendChild(completedButton);
+
+    //Trash button
+    const trashButton = document.createElement('button');
+    trashButton.innerHTML = '<i class= " fas fa-trash"> </i>';
+    trashButton.classList.add("trash-btn");
+    todoDiv.appendChild(trashButton);
+
+    //APPENDING TODODIV in TODO-LIST
+    todoList.appendChild(todoDiv);
 }
