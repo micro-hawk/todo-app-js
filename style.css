@@ -91,3 +91,11 @@ form button:hover {
 .trash-btn {
   background: rgb(233, 60, 60);
 }
+
+.todo-items {
+  padding: 0rem 0.5rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
