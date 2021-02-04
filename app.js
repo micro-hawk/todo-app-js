@@ -46,7 +46,11 @@ function deleteCheck(event){
     //deleting trash;
     if(items.classList[0] === "trash-btn") {
         const todo = items.parentElement;
-        todo.remove();
+        //animation
+        todo.classList.toggle('fall-animation');
+        todo.addEventListener("transitionend", function() {
+            todo.remove();
+        });
     }
 
     if(items.classList[0] === "complete-btn"){
