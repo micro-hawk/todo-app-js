@@ -19,7 +19,7 @@ function addTodo(event){
     const newTodo = document.createElement('li');
     newTodo.innerText = todoInput.value;
     newTodo.classList.add('todo-items');
-
+                        
     todoDiv.appendChild(newTodo);
 
     //CheckMark button
